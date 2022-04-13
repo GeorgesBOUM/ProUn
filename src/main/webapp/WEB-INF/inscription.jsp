@@ -35,6 +35,8 @@
 
                 <input type="submit" value="Inscription" class="sansLabel" />
                 <br />
+                
+                <p class="${empty erreurs ? 'succes' : 'erreur'}">${resultat}</p>
             </fieldset>
         </form>
     </body>
