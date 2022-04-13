@@ -38,7 +38,7 @@ public class Inscription extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String resultat;
         Map<String, String> erreurs = new HashMap<String, String>();
@@ -74,6 +74,8 @@ public class Inscription extends HttpServlet {
         /* Stockage du résultat et des messages d'erreur dans l'objet request */
         request.setAttribute( ATT_ERREURS, erreurs );
         request.setAttribute( ATT_RESULTAT, resultat );
+        
+        doGet(request, response);
         
 	}
 	
