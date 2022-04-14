@@ -51,7 +51,7 @@ public class Inscription extends HttpServlet {
         request.setAttribute( ATT_FORM, form );
         request.setAttribute( ATT_USER, utilisateur );
         
-        doGet(request, response);
+        request.getRequestDispatcher(VUE).forward(request, response);
         
 	}
 
