@@ -6,23 +6,26 @@ public class Utilisateur {
     private String nom;
 
     public void setEmail(String email) {
-	this.email = email;
+    	this.email = email;
     }
+    
     public String getEmail() {
 	return email;
     }
 
     public void setMotDePasse(String motDePasse) {
-	this.motDePasse = motDePasse;
+    	this.motDePasse = motDePasse;
     }
+    
     public String getMotDePasse() {
-	return motDePasse;
+    	return motDePasse;
     }
 
     public void setNom(String nom) {
-	this.nom = nom;
+    	this.nom = nom;
     }
+    
     public String getNom() {
-	return nom;
+    	return nom;
     }
 }
