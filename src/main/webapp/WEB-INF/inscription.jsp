@@ -6,10 +6,10 @@
     <head>
         <meta charset="utf-8" />
         <title>Inscription</title>
-        <link type="text/css" rel="stylesheet" href="form.css" />
+        <link type="text/css" rel="stylesheet" href="<c:url value="form.css"/>" />
     </head>
     <body>
-        <form method="post" action="inscription">
+        <form method="post" action="<c:url value="/inscription"/>">
             <fieldset>
                 <legend>Inscription</legend>
                 <p>Vous pouvez vous inscrire via ce formulaire.</p>
