@@ -26,7 +26,7 @@
 
                 <label for="confirmation">Confirmation du mot de passe <span class="requis">*</span></label>
                 <input type="password" id="confirmation" name="confirmation" value="" size="20" maxlength="20" />
-                <span class="erreur">${form.erreurs['email']}</span>
+                <span class="erreur">${form.erreurs['confirmation']}</span>
                 <br />
 
                 <label for="nom">Nom d'utilisateur</label>
